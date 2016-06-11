@@ -17,10 +17,15 @@ pages and written tens of gigabytes to disk without issue.
 * Extremely configurable base for writing your own crawler
 * Provides some simple logic for auto-detecting linked resources - which you can
   replace or augment
-* Has a flexible queue system which can be frozen to disk and defrosted
+* Has a distributed queue system using RabbitMQ and Redis
 * Provides basic statistics on network performance
 * Uses buffers for fetching and managing data, preserving binary data (except
   when discovering links)
+
+## TODO
+* Add BangDB to make broad crawling.
+* Improve statistics system to connect with a common source of truth.
+* Add websockets for the central management system communication.
 
 ## Documentation
 
