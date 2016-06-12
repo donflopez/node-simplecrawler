@@ -64,6 +64,21 @@ you'll need to require simplecrawler first:
 var Crawler = require("simplecrawler");
 ```
 
+### Dependencies
+
+You need two servers, a RabbitMQ and a Redis server. Then you have to pass the
+urls as environment variables.
+
+```
+export RABBITMQ_URL='amqp://rabbiturl.com:5672'
+export REDIS_URL='redis://redisurl.com:2345/1'
+export TAIL='name_of_my_rabbit_tail'
+```
+
+Then the queue for the crawler will be TAIL and the queue for the fetched items
+will be `TAIL + '_completed'`
+
+
 ### Simplified Mode
 
 If all you need is a quick crawl of a small website, the simplified mode of

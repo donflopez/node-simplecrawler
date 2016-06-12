@@ -1,7 +1,7 @@
 {
   "name": "spiderhunt",
   "description": "Very straightforward web crawler. Uses EventEmitter. Based on Simplecrawler but using a distributed queue system.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "https://github.com/donflopez/spiderhunt",
   "author": "Christopher Giffard <christopher.giffard@cgiffard.com>",
   "license": "BSD-2-Clause",
